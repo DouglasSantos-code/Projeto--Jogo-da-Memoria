@@ -68,6 +68,7 @@ function flipCard() {
                 game.clearCards();
                 if (game.checkGameOver()) {
                     let gameOverLayer = document.getElementById("gameOver");
+                    $("#gameOver").slideDown(2000)
                     gameOverLayer.style.display = 'flex';
                 }
             } else {
